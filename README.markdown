@@ -1,5 +1,5 @@
-PHP Quick Profiler README
-http://particletree.com/features/php-quick-profiler/
+##PHP Quick Profiler README
+[http://particletree.com/features/php-quick-profiler/](http://particletree.com/features/php-quick-profiler/)
 
 ### On This Page
 
@@ -9,10 +9,7 @@ http://particletree.com/features/php-quick-profiler/
 4. Setting up the Database Class
 5. Using Smarty instead of PHP echos
 
-
-#####################################
-1. License
-#####################################
+####1. License
 
 Created by Ryan Campbell. Designed by Kevin Hale.
 
@@ -23,9 +20,7 @@ Creative Commons Attribution 3.0 License.
 
 http://creativecommons.org/licenses/by/3.0/us/
 
-#####################################
-2. Introduction and Overview of Files
-#####################################
+####2. Introduction and Overview of Files
 
 PHP Quick Profiler (PQP) is a helper class that outputs to the screen information 
 useful for debugging when the page has finished executing. If you haven't already, 
@@ -45,10 +40,7 @@ Here's a breakdown of the files:
 - /classes/Console.php : The class used to log items to the PQP display.
 - /classes/MySqlDatabase : A sample database wrapper to show how database logging can be implemented with PQP.
 
-
-##############################
-3. Getting the Example Working
-##############################
+####3. Getting the Example Working
 
 For the most part, the example should work once you drop it in your root directory. 
 There are a few settings you might want to check if it doesn't.
@@ -62,9 +54,7 @@ The reason this would happen is because the destructor is not firing on your ser
 
 - At this point, everything should work except for the database tab.
 
-################################
-4. Setting up the Database Class
-################################
+####4. Setting up the Database Class
 
 *NOTE!*
 This step requires knowledge of your PHP / Database interactions. 
@@ -100,9 +90,7 @@ $this->logQuery($sql, $start);
 - Everything in /classes/MySqlDatabase.php under the section comment "Debugging"
 must be available for the above snippet to work.
 
-####################################
-5. Using Smarty instead of PHP echos
-####################################
+####5. Using Smarty instead of PHP echos
 
 We love Smarty and hate using echos to spit out markup, but to make PQP work for as many people 
 as possible we set the default to use the echo version. To show love to the Smarty users out 
