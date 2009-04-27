@@ -187,9 +187,8 @@ class PhpQuickProfiler {
 	     DISPLAY TO THE SCREEN -- CALL WHEN CODE TERMINATING
 	-----------------------------------------------------------*/
 	
-	public function display($db = '', $master_db = '') {
+	public function display($db = '') {
 		$this->db = $db;
-		$this->master_db = $master_db;
 		$this->gatherConsoleData();
 		$this->gatherFileData();
 		$this->gatherMemoryData();
