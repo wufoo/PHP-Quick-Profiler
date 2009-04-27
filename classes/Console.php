@@ -93,6 +93,7 @@ class Console {
 		if(!isset($GLOBALS['pqp_logs'])) self::init();
 		return $GLOBALS['pqp_logs'];
 	}
+	
 }
 
 ?>
