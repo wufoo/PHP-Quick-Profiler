@@ -16,7 +16,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 require_once('classes/PhpQuickProfiler.php');
-//require_once('classes/MySqlDatabase.php');
+require_once('classes/MySqlDatabase.php');
 
 class PQPExample {
 	
